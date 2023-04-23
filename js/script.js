@@ -15,15 +15,10 @@ window.onscroll = function () {
 //hamburger animation | navigational menu
 
 var navbar = document.getElementById('navbarnav');
-var iconbar = document.getElementById('iconbar');
-var body = document.getElementById('body');
-var contact = document.getElementById('contact');
 
 function myFunction(x) {
     if (navbar.style.opacity === '1') {
         navbar.style.opacity = '0';
-
-        body.style.overflowY = 'scroll';
     } else {
         navbar.style.opacity = '1';
     }
