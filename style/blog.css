@@ -1,0 +1,453 @@
+/*universal design*/
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*header section design*/
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    transition: .25s ease-in;
+}
+
+/*promotion design*/
+
+.promotion {
+    background-color: yellow;
+}
+
+.promotion a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #222;
+    font-size: 13px;
+}
+
+/*logo design*/
+
+.navbar-brand {
+    font-size: 2rem !important;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+/*nav categories section design*/
+
+.topbar .navbar-nav .nav-item .nav-link {
+    position: relative;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 5px;
+}
+
+
+.topbar .navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .25s ease-in;
+}
+
+.topbar .navbar-nav .nav-item .nav-link:hover::before {
+    width: 100%;
+}
+
+.topbar .navbar-nav .nav-item .nav-link:hover,
+.topbar .navbar-nav .nav-item .nav-link:focus {
+    color: yellow;
+}
+
+/*dropdown section design*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: yellow;
+    width: 100%;
+    left: 0;
+}
+
+.dropdown-content .col-lg-4,
+.dropdown-content .col-lg-3,
+.dropdown-content .col-lg-5 {
+    padding: 3rem;
+    color: #222;
+}
+
+.dropdown-content .row .col-link,
+.dropdown-content .row .main-col-link {
+    color: #222;
+    text-decoration: none;
+    font-weight: bolder;
+    display: block;
+    font-size: 2rem;
+}
+
+.dropdown-content .row .col-link:hover,
+.dropdown-content .row .main-col-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content .row .main-col-link {
+    color: red;
+}
+
+.dropdown-content .col-lg-5 .col-sm-4 h3,
+.dropdown-content .col-lg-4 .col-sm-12 h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.dropdown-content .col-lg-5 .col-sm-4 a,
+.dropdown-content .col-lg-4 .col-sm-12 a {
+    font-size: 14px;
+    display: block;
+    color: #666;
+    text-decoration: none;
+}
+
+.dropdown-content .col-lg-5 .col-sm-4 a:hover,
+.dropdown-content .col-lg-4 .col-sm-12 a:hover {
+    text-decoration: underline;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*hamburger menu design*/
+
+.icon-bar {
+    display: none !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-bar .box {
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: .25s ease-in;
+}
+
+/*hamburger animation*/
+
+.display .box1 {
+    transform: translate(0, 11px) rotate(-45deg);
+    background-color: #222;
+    width: 40px;
+    height: 4px;
+}
+
+.display .box2 {
+    opacity: 0;
+}
+
+.display .box3 {
+    transform: translate(0, -11px) rotate(45deg);
+    background-color: #222;
+    width: 40px;
+    height: 4px;
+}
+
+/*icons link layout*/
+
+.navbar-links a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px;
+    transition: .25s ease-in;
+}
+
+.navbar-links i {
+    font-size: 1.2rem;
+    position: relative;
+    color: #fff;
+    transition: .25s ease-in;
+}
+
+.navbar-links a:hover {
+    background-color: yellow;
+}
+
+.navbar-links a:hover i {
+    color: #222;
+}
+
+.navbar-links i .badge {
+    font-size: 8px;
+    position: absolute;
+    background-color: red;
+    top: -3px;
+}
+
+
+/*other navigational links*/
+
+.helpful-nav-links {
+    background-color: #fff;
+    padding: 7px 0;
+}
+
+.helpful-nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+    display: inline-block;
+
+}
+
+.helpful-nav-links a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 60px 60px;
+}
+
+/*home section design*/
+
+.home {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/about-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content h1 {
+    font-size: 8rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.home-content p span {
+    color: yellow;
+}
+
+/*blog section design*/
+
+.blog-content .col-md-8 h3 {
+    font-size: 2rem;
+}
+
+.blog-content .col-md-8 p {
+    color: #666;
+}
+
+.blog-content .col-md-8 .buttons input:first-child {
+    float: Left;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.blog-content .col-md-8 .buttons input:first-child::placeholder {
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+.blog-content .col-md-8 .buttons input:last-child {
+    float: left;
+    width: 20%;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    border: 1px solid #222;
+    transition: .25s ease-in;
+}
+
+.blog-content .col-md-8 .buttons input:last-child:hover {
+    background-color: yellow;
+    color: #222;
+}
+
+.blog-content .col-md-8 .buttons::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.blog-content .label {
+    padding: 2rem 0 3rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.blog-content .label h3 {
+    font-weight: 200;
+    font-size: 1.7rem;
+}
+
+.blog-content .label span {
+    font-size: 15px;
+    font-weight: 200;
+    color: #666;
+}
+
+/*footer section design*/
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 60px 0
+}
+
+footer .container {
+    padding: 1rem 0;
+}
+
+footer span {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+footer .footer-links a {
+    display: inline-block;
+    margin-right: 13px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #555;
+    font-weight: 400;
+}
+
+footer .footer-social-links a {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+footer .footer-social-links i {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+footer .footer-social-links i:hover {
+    color: #222;
+}
+
+
+
+
+
+/*responsiveness*/
+
+/*small screens | laptops */
+@media screen and (max-width: 1030px) {
+
+    /*header section design*/
+
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .promotion,
+    .navbar-links,
+    .helpful-nav-links {
+        display: none;
+    }
+
+    /*hamburger menu design*/
+
+    .icon-bar {
+        position: relative;
+        z-index: 1000;
+        display: block !important;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        flex-direction: column !important;
+        transition: .25s ease-in;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 5rem;
+        color: #222 !important;
+    }
+
+    .topbar .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #222;
+        transition: .25s ease-in;
+    }
+
+    .topbar .navbar-nav .nav-item .nav-link:hover::before {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none !important;
+    }
+
+    /*home section design*/
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content p {
+        letter-spacing: 17px;
+    }
+
+    .blog-content .col-md-8 .buttons input:first-child {
+        float: none;
+        width: 100%;
+    }
+
+    .blog-content .col-md-8 .buttons input:last-child {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*ipads | laptops*/
+@media screen and (max-width: 768px) {}
+
+/*mobile devices*/
+@media screen and (max-width: 480px) {}

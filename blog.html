@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/blog.css">
+
+    <!--boxicon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <!--header layout-->
+    <header id="header">
+
+        <!--promotion-->
+        <div class="promotion">
+            <div class="promotion-content container text-center">
+                <a href="#">FREE SHIPPING FOR UNICLUB MEMBERS AND ALL ORDERS IN APP <i
+                        class='bx bx-chevron-down'></i></a>
+            </div>
+        </div>
+
+        <!--navbar layout-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <div class="topbar container">
+
+                <!--navbar logo layout-->
+                <a href="index.html" class="navbar-brand">ESTYLE</a>
+
+                <!--hamburger menu layout-->
+                <div class="icon-bar" onclick="myFunction(this)" id="iconbar">
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                </div>
+
+                <!--nav categories layout-->
+                <ul class="navbar-nav" id="navbarnav">
+                    <!--categories 1 layout-->
+                    <li class="nav-item navbar-dropdown">
+
+                        <a href="#" class="nav-link">WOMEN</a>
+                        <!--categories dropdown-content 1-->
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a href="#" class="col-link">VIEW ALL</a>
+                                    <a href="#" class="col-link">TRENDING</a>
+                                    <a href="#" class="col-link">ESSENTIALS</a>
+
+                                </div>
+
+                                <div class="col-lg-5">
+
+                                    <div class="row">
+                                        <div class="col-sm-4 mb-4">
+                                            <h3>TOPS</h3>
+                                            <a href="#">Polos</a>
+                                            <a href="#">Bundled Tees</a>
+                                            <a href="#">Basic Tees</a>
+                                            <a href="#">Graphic Tees</a>
+                                            <a href="#">Print & Stripes</a>
+                                            <a href="#">Fashion Tops</a>
+                                            <a href="#">Shirts</a>
+                                        </div>
+
+                                        <div class="col-sm-4 mb-4">
+                                            <h3>BOTTOMS</h3>
+                                            <a href="#">Shorts & Skirts</a>
+                                            <a href="#">Leggings</a>
+                                            <a href="#">Track Pants</a>
+                                            <a href="#">Trousers</a>
+                                            <a href="#">Jeans</a>
+                                        </div>
+
+                                        <div class="col-sm-4 mb-4">
+                                            <h3>FOOTWEAR</h3>
+                                            <a href="#">Flip Flops</a>
+                                            <a href="#">Sliders</a>
+                                            <a href="#">Shoes & Sandals</a>
+                                            <a href="#">Socks</a>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <h3>JACKETS</h3>
+                                            <a href="#">Hoodies</a>
+                                            <a href="#">Pullovers</a>
+                                            <a href="#">Fashion Jackets</a>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <h3>DRESSES</h3>
+                                            <a href="#">T-Shirt Dresses</a>
+                                            <a href="#">Fashion Dresses</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="dropdown-img">
+                                        <img src="img/nav-photo-2.jpg" alt="navbar photo 2"
+                                            style="width: 50%;display: block;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--categories 2 layout-->
+                    <li class="nav-item navbar-dropdown">
+                        <a href="#" class="nav-link">MEN</a>
+
+                        <!--categories dropdown-content 2-->
+                        <div class="dropdown-content">
+
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <a href="#" class="col-link">VIEW ALL</a>
+                                    <a href="#" class="col-link">NEW DROPS</a>
+                                    <a href="#" class="col-link">TRENDING</a>
+                                    <a href="#" class="col-link">ESSENTIALS</a>
+                                    <a href="#" class="col-link">BACK IN STOCK</a>
+                                    <a href="#" class="main-col-link">SHOP SALE</a>
+                                </div>
+
+                                <div class="col-lg-5">
+
+                                    <div class="row">
+                                        <div class="col-sm-4 mb-4">
+                                            <h3>TOPS</h3>
+                                            <a href="#">Polos</a>
+                                            <a href="#">Bundled Tees</a>
+                                            <a href="#">Basic Tees</a>
+                                            <a href="#">Graphic Tees</a>
+                                            <a href="#">Print & Stripes</a>
+                                            <a href="#">Fashion Tops</a>
+                                        </div>
+
+                                        <div class="col-sm-4 mb-4">
+                                            <h3>BOTTOMS</h3>
+                                            <a href="#">Shorts</a>
+                                            <a href="#">Boxer Shorts</a>
+                                            <a href="#">Track Pants</a>
+                                            <a href="#">Trousers</a>
+                                            <a href="#">Jeans</a>
+                                        </div>
+
+                                        <div class="col-sm-4 mb-4">
+                                            <h3>FOOTWEAR</h3>
+                                            <a href="#">Flip Flops</a>
+                                            <a href="#">Sliders</a>
+                                            <a href="#">Shoes</a>
+                                            <a href="#">Socks</a>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <h3>JACKETS</h3>
+                                            <a href="#">Hoodies</a>
+                                            <a href="#">Pullovers</a>
+                                            <a href="#">Fashion Jackets</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="dropdown-img">
+                                        <img src="img/navbar-photo.jpg" alt="navbar photo 1"
+                                            style="width: 50%;display: block;">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--categories 3 layout-->
+                    <li class="nav-item navbar-dropdown">
+                        <a href="#" class="nav-link">KIDS</a>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="dropdown-img">
+                                        <img src="img/nav-photo-3.jpg" alt="navbar photo 3"
+                                            style="width: 100%;display: block;">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="row">
+                                        <div class="col-sm-12 mb-4">
+                                            <h3>TOPS</h3>
+                                            <a href="#">Tees</a>
+                                            <a href="#">Jackets & Pullovers</a>
+                                        </div>
+                                        <div class="col-sm-12 mb-4">
+                                            <h3>BOTTOMS</h3>
+                                            <a href="#">Shorts</a>
+                                            <a href="#">Pants & Leggings</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="dropdown-img">
+                                        <img src="img/nav-photo-4.jpg" alt="navbar photo 4"
+                                            style="width: 50%;display: block;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!--icons link layout-->
+                <div class="navbar-links">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <a href="#"><i class='bx bx-user'></i></a>
+                    <a href="#">
+                        <i class='bx bx-heart'>
+                            <span class="badge">20</span>
+                        </i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bx-cart-alt'>
+                            <span class="badge">10</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!--additional links-->
+        <div class="helpful-nav-links">
+            <div class="helpful-nav-links-content container text-center">
+                <a href="#">help</a>
+                <span>|</span>
+                <a href="#">order tracker</a>
+                <span>|</span>
+                <a href="#">become a member</a>
+                <span>|</span>
+                <a href="#">uniclub</a>
+                <span>|</span>
+                <a href="#">careers</a>
+                <span>|</span>
+                <a href="#">blog</a>
+                <span>|</span>
+                <a href="#">sign up</a>
+                <span>|</span>
+                <a href="#">log in</a>
+            </div>
+        </div>
+    </header>
+
+    <!--main layout-->
+    <main>
+        <!--home layout-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>BLOG</h1>
+                <p class="text-center">home / <span>blog</span></p>
+            </div>
+        </section>
+
+        <!--blog layout-->
+        <section class="blog" id="blog">
+            <div class="blog-content container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3>Nothing Founds</h3>
+                        <p>It seems we can’t find what you’re looking for. Perhaps searching can help</p>
+                        <div class="buttons">
+                            <form action="">
+                                <input type="text" placeholder="Search" required maxlength="20a">
+                                <input type="submit" value="Search" requireda>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="label">
+                            <h3>Recents Comments</h3>
+                        </div>
+                        <div class="label">
+                            <h3>Archives</h3>
+                        </div>
+                        <div class="label">
+                            <h3>Categories</h3>
+                            <span>No categories</span>
+                        </div>
+                        <div class="label">
+                            <h3>Meta</h3>
+                            <span>Log in</span>
+                            <span>Entries feed</span>
+                            <span>Comments feed</span>
+                            <span>WordPress.org</span>
+                        </div>
+                        <div class="label">
+                            <h3>Instagram</h3>
+                            <span>Instagram has returned invalid data</span>
+
+                        </div>
+                        <div class="label">
+                            <h3>Newsletter</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer layout-->
+    <footer>
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-links col-lg-6 d-sm-flex justify-content-sm-start mt-3">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Blog</a>
+
+                    </div>
+                    <div class="footer-social-links col-lg-6 d-lg-flex justify-content-lg-end mt-3">
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-pinterest-alt'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--additional script-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

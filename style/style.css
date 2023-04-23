@@ -1,0 +1,536 @@
+/*universal design*/
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*header section design*/
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    transition: .25s ease-in;
+}
+
+/*promotion design*/
+
+.promotion {
+    background-color: yellow;
+}
+
+.promotion a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #222;
+    font-size: 13px;
+}
+
+/*logo design*/
+
+.navbar-brand {
+    font-size: 2rem !important;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+/*nav categories section design*/
+
+.topbar .navbar-nav .nav-item .nav-link {
+    position: relative;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 5px;
+}
+
+
+.topbar .navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .25s ease-in;
+}
+
+.topbar .navbar-nav .nav-item .nav-link:hover::before {
+    width: 100%;
+}
+
+.topbar .navbar-nav .nav-item .nav-link:hover,
+.topbar .navbar-nav .nav-item .nav-link:focus {
+    color: yellow;
+}
+
+/*dropdown section design*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: yellow;
+    width: 100%;
+    left: 0;
+}
+
+.dropdown-content .col-lg-4,
+.dropdown-content .col-lg-3,
+.dropdown-content .col-lg-5 {
+    padding: 3rem;
+    color: #222;
+}
+
+.dropdown-content .row .col-link,
+.dropdown-content .row .main-col-link {
+    color: #222;
+    text-decoration: none;
+    font-weight: bolder;
+    display: block;
+    font-size: 2rem;
+}
+
+.dropdown-content .row .col-link:hover,
+.dropdown-content .row .main-col-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content .row .main-col-link {
+    color: red;
+}
+
+.dropdown-content .col-lg-5 .col-sm-4 h3,
+.dropdown-content .col-lg-4 .col-sm-12 h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.dropdown-content .col-lg-5 .col-sm-4 a,
+.dropdown-content .col-lg-4 .col-sm-12 a {
+    font-size: 14px;
+    display: block;
+    color: #666;
+    text-decoration: none;
+}
+
+.dropdown-content .col-lg-5 .col-sm-4 a:hover,
+.dropdown-content .col-lg-4 .col-sm-12 a:hover {
+    text-decoration: underline;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*hamburger menu design*/
+
+.icon-bar {
+    display: none !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-bar .box {
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: .25s ease-in;
+}
+
+/*hamburger animation*/
+
+.display .box1 {
+    transform: translate(0, 11px) rotate(-45deg);
+    background-color: #222;
+    width: 40px;
+    height: 4px;
+}
+
+.display .box2 {
+    opacity: 0;
+}
+
+.display .box3 {
+    transform: translate(0, -11px) rotate(45deg);
+    background-color: #222;
+    width: 40px;
+    height: 4px;
+}
+
+/*icons link layout*/
+
+.navbar-links a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px;
+    transition: .25s ease-in;
+}
+
+.navbar-links i {
+    font-size: 1.2rem;
+    position: relative;
+    color: #fff;
+    transition: .25s ease-in;
+}
+
+.navbar-links a:hover {
+    background-color: yellow;
+}
+
+.navbar-links a:hover i {
+    color: #222;
+}
+
+.navbar-links i .badge {
+    font-size: 8px;
+    position: absolute;
+    background-color: red;
+    top: -3px;
+}
+
+
+
+/*other navigational links*/
+
+.helpful-nav-links {
+    background-color: #fff;
+    padding: 7px 0;
+}
+
+.helpful-nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+    display: inline-block;
+
+}
+
+.helpful-nav-links a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+/*home section design*/
+
+section {
+    padding: 100px 60px 30px;
+}
+
+.home {
+    height: 100vh;
+    background-image: url(../img/hero-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 60px 60px;
+}
+
+
+.home-content {
+    padding-top: 28rem;
+}
+
+.home-content h1 {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.home-content p {
+    letter-spacing: 20px;
+}
+
+.home-content .btn {
+    background-color: yellow;
+    border: 1px solid #222;
+    border-radius: 0;
+    padding: 12px 30px;
+    transition: .25s ease-in;
+}
+
+.home-content .btn:hover {
+    padding: 12px 40px;
+    background-color: #222;
+    color: #fff;
+}
+
+/*home2 section design*/
+
+.home2 {
+    height: 30vh;
+    background-image: linear-gradient(rgba(73, 73, 10, 0.2), rgba(180, 180, 27, 0.6)), url(../img/hero-photo-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-text h2 {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+/*categories section design*/
+
+.categories .col-lg-4,
+.featured .col-lg-3 {
+    cursor: pointer;
+}
+
+.categories .categories-content h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #222;
+}
+
+.categories .categories-content img {
+    border: 1px solid #222;
+    border-bottom: none;
+}
+
+/*featured section design*/
+
+.featured {
+    background-color: yellow;
+    padding: 60px 60px 30px;
+}
+
+.featured .featured-content img {
+    border: 1px solid #222;
+}
+
+.featured .featured-content .col-lg-3 {
+    position: relative;
+}
+
+.featured .featured-content .col-lg-3 .layer {
+    position: absolute;
+    top: 1rem;
+    background-color: #222;
+}
+
+.featured .featured-content .col-lg-3 .layer span {
+    font-weight: bold;
+    padding: 0 1rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.featured .featured-btn .btn {
+    background-color: #fff;
+    border: 1px solid #222;
+    color: #222;
+    border-radius: 0;
+    padding: 12px 30px;
+    transition: .25s ease-in;
+}
+
+.featured .featured-btn .btn:hover {
+    padding: 12px 40px;
+    background-color: #222;
+    color: #fff;
+}
+
+/*contact section design*/
+
+.contact {
+    position: relative;
+    padding: 50px 60px 60px;
+    background-color: #222;
+}
+
+.contact .contact-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact .contact-content h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact .contact-content input {
+    padding: 1rem;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.contact .contact-content .btn {
+    width: 100%;
+    background-color: yellow;
+    border-radius: 0;
+}
+
+.contact .contact-content .btn:hover {
+    background-color: rgb(175, 175, 20);
+}
+
+/*footer section design*/
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 60px 0
+}
+
+footer .container {
+    padding: 1rem 0;
+}
+
+footer span {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+footer .footer-links a {
+    display: inline-block;
+    margin-right: 13px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #555;
+    font-weight: 400;
+}
+
+footer .footer-social-links a {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+footer .footer-social-links i {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+footer .footer-social-links i:hover {
+    color: #222;
+}
+
+
+/*responsiveness*/
+
+/*small screens | laptops */
+@media screen and (max-width: 1030px) {
+
+    /*header section design*/
+
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .promotion,
+    .navbar-links,
+    .helpful-nav-links {
+        display: none;
+    }
+
+    /*hamburger menu design*/
+
+    .icon-bar {
+        position: relative;
+        z-index: 1000;
+        display: block !important;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+        transition: .25s ease-in;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 5rem;
+        color: #222 !important;
+    }
+
+    .topbar .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #222;
+        transition: .25s ease-in;
+    }
+
+    .topbar .navbar-nav .nav-item .nav-link:hover::before {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none !important;
+    }
+
+    /*home section design*/
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content p {
+        letter-spacing: 17px;
+    }
+
+
+
+}
+
+/*ipads | laptops*/
+@media screen and (max-width: 768px) {
+
+    /*home section design*/
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content p {
+        letter-spacing: 13px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .home {
+        height: 80vh;
+    }
+
+    .home-content {
+        padding-top: 18rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        letter-spacing: 9px;
+    }
+}
+
+/*mobile devices*/
+@media screen and (max-width: 480px) {
+    .home-content {
+        padding-top: 16rem;
+    }
+}
